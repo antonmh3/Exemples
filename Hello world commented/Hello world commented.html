@@ -1,0 +1,57 @@
+
+
+<!-- s'afegeix l'etiqueta DOCTYPE html per a que es sapiga el principal format de llenguatge de progrmació-->
+<!DOCTYPE html>
+<!-- aquest document de text conté en un inici ordres d'estil escrites en llenguatge CSS dins un head que no es mostrara al resultat de la pàgina. Normalment s'enllaçen els estils CSS des d'una carpeta externa al document html-->
+<head>
+	<!--el fet de que es posi un escrit de títol en aquesta part fa que es mostri només a la barra de busqueda-->
+	<title>Hola mon! (HTML+CSS)</title>
+	<style>
+	 /*EL segon pas del CSS es donar l'estil predeterminat que hauria de tenir el contenidor principal de tots els aspectes representables de la pàgina (h1,p,div,a)*/ 
+		body {
+			height: 75vh; width: 90%; margin: auto;
+			background-color: #2D2D2D;
+		}
+		/* A continuació del body es regulen els estils de font i color dels elements representables de dins el body*/
+		/* h1 fa referencia al estil del títol principal que mostrara la pàgina*/
+		h1 {
+			color: #C26356;
+			font-size: 30px;
+			font-family: Menlo, Monaco, fixed-width;
+		}
+		/*p fa referéncia al primer parragraf de text que ens trovarem sota el títol principal visisble*/
+		p {
+			color: white;
+			font-family: "Source Code Pro", Menlo, Monaco, fixed-width;
+		}
+		/* es regula l'estil d'un segon contenidor div que hi haura dins el body principal on es mostrara el mapa d'instamaps*/
+		div {
+			height: 75vh; width: 90%; margin: auto;
+		}
+		/* es regulen els estils dels links que volem adjuntar cap al recurs d'instamaps amb un condicional de color per si s'ha visitat o no*/
+		/* unvisited link */
+		a:link {
+		  color: red;
+		}
+
+		/* visited link */
+		a:visited {
+		  color: green;
+		}
+/*Es finalitza el CSS i es tanca el style i head en forma html*/
+	</style>
+</head>
+<!-- s'inicia la part de programació en html, es a dir, el que es veura en la pàgina amb els estils anteriorment donats-->
+<body>
+	<!-- el títol h1 que tindra la pàgina-->
+	<h1>Hola Món!</h1>
+	<!-- l'explicació de la pàgina amb un link incrustat al mateix parragraf que porta a instamaps-->
+	<p>Aquest es un exemple molt senzill de "Hello World" fet amb HTML, CSS i un <code>iframe</code> d'un mapa que hem creat a <a href="https://www.instamaps.cat" target="_blank">Instamaps</a>.</p>
+	<!-- s'especifica un iframe dins el contenidor div sobre el mapa que volem adjuntar i les seves propietats, aixi com el link src d'on prové-->
+	<div>
+		<iframe width="100%" height="100%" frameborder="0" scrolling="no" marginheight="0" 				marginwidth="0" src="https://www.instamaps.cat/visor.html?	businessid=3266848c019d7fb071dbcc9bc28a568e&3D=false&embed=1" >
+		</iframe>
+	</div>
+<!-- es tanca el body i el codi html per finalitzar-->
+</body>
+</html>
