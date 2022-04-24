@@ -1,0 +1,174 @@
+
+<!DOCTYPE html>
+
+<head>
+	
+	<title>Elements HTML!</title>
+</head>
+<body>
+	
+	<h1>Elements HTML</h1>
+
+<p id="top"> L'<b>estructura base</b> d'un document HTML és: 
+	<br> < !DOCTYPE html >
+	<br> < html >
+	<br> < head >
+	<br> < title > 
+	<br> < /title> 
+	<br> < /head >
+	<br> < body >
+	<br> < /body >
+	<br> < /html >
+</p>
+
+<p> La <b>sitaxis d'HTML</b> es repeteix i sol ser la mateixa: ( < nom del element > contingut < /end tag> ) </p>
+
+<p> Per altra banda els noms dels elements poden anar acompanyats de <b>attributs</b>: ( < img src= "image/leaflet.png" > ) </p>
+
+<p> Existeixen <b> elements en bloc </b> els quals començaran automaticament en una altre linia de la web i <b>elements en linia</b> els quals tenen cabuda dins als elements en bloc</p>
+
+<p> Exemples elements en Bloc: </p>
+	<ul>
+		<li>Heading < h1 ></li> 
+		<li>Paragraph < p ></li> 
+		<li>Bullet-point lists < ul ></li> 
+		<li>Numbered lists < li ></li> 
+	</ul>
+
+
+<p> Exemples elements en Línia: </p>
+	<ul>
+		<li>Links < a ></li> 
+		<li>Bold text < b ></li> 
+		<li>Italic text < i ></li> 
+		<li>Images < img ></li> 
+	</ul>
+
+<p>Existeixen elements per a donar l'<b>estructura</b>, elements per a donar <b>informació general</b> i elements per a donar <b>contingut</b></p>
+<p> Elements d'estructura:</p> 
+	<ul>
+		<li>Tipologia de document < !DOCTYPE ></li> 
+		<li>Document < html ></li> 
+		<li>Informació general < head ></li> 
+		<li>Contingut < body ></li> 
+	</ul>
+<p> Elements d'informació general:</p> 
+	<ul>
+		<li>Titol de la pàgina web < title ></li> 
+		<li>Afegir metadades < meta ></li> 
+		<li>Afegir CSS directament al Html < style ></li> 
+		<li>Linkar CSS extern al HTML < link ></li> 
+		<li>Afegir JavaScript code < script ></li>
+	</ul>
+<p> Elements de contingut:</p> 
+	<ul>
+		<li>Titol d'apartats < h1, h2... h6 ></li> 
+		<li>Paragrafs < p ></li> 
+		<li>Configuració de text: negreta < b >, cursiva < i >, supindex < sup >, subindex < sub >, text predeterminat amb espais fets a ma < pre ></li> 
+		<li>Salts de línea < br > i Salt de línia amb barra horitzonal < hr ></li> 
+		<li>Llistes < ul >, < ol > i < li ></li>
+		<li>Links < a ></li>
+		<li>Imatges < img ></li>
+		<li>Afegir taula < table >, capçalera de la taula < th >, files < tr > i columnes < td ></li>
+		<li>Agrupar elements < div > i < span > </li>
+		<li>Recollir info del ususari: camps de formularis < inputs > i desplegables < select > </li>
+	</ul>
+<h2> Informació general (head)</h2>
+<p> per a <b>afegir títol</b> cal: < title> ABCDE < /title> </p>
+<p> per a <b>linkar una fulla d'estils CSS</b> cal: < link rel= "stylesheet" href="style.css"> <br> dins el full linkat hi pot haver normes formulades com:<pre>  
+	< style>
+	p {
+		font-style: italic;
+	}
+	< /style>
+</pre>
+</p>
+<p> per a <b>linkar una fulla d'estils JavaScript</b> cal: < script src= "leaflet.js">< /script> <br> dins el full linkat hi pot haver normes formulades com:<pre>  
+	< script>
+	function hello() {
+		document.getelEmentById("demo").innerHTML = "Hello JavaScript!";
+	};
+	document.getElmentById("change_text").addEventListener("clik", hello);
+	< /script>
+</pre>
+</p>
+<h2>Contingut (body)</h2>
+<p> Hi han <b>salts de linia</b> amb la comanda < br >, per exemple:<br> anava un dia sol<br>
+ i em vaig trobar a algú.</p>
+<p> també hi han <b>salts de linia o parragraf</b> amb una ratlla afegint el codi < hr >:</p>
+<hr>
+<p>Hi han diversos <b>formatejadors de text</b> com:<br></p>
+<ul>
+	<li> lletra negreta amb < b >: <b>casa</b></li>
+	<li>lletra cursiva amb < i >: <i>casa</i>
+	<li>subindex amb < sub >: casa<sub>petita</sub>
+	<li>superindex amb < sup >: casa<sup>gran</sup>
+	<li>altres que et deixen el text predeterminat amb < pre >
+</ul>
+<p> hi han dues etiquetes  principals de codi per configurar <b>llistes</b>: <p>
+<p> ordered list que et crea una llista enumerada:<br>
+	< ol ><br>
+		< li >casaX < /li></p>
+	< /ol>
+<ol>
+	<li> casa1 </li>
+	<li> casa2 </li>
+</ol>
+<p> unordered list que et crea una llista de punts:<br>
+	< ul ><br>
+		< li >casaX < /li></p>
+	< /ul>
+<ul>
+	<li> casa1 </li>
+	<li> casa2 </li>
+</ul>
+<p>Exiteixen els <b>Links</b> per a fer salts a altres webs o a parts de la mateixa web, aquest fet es fa amb el codi < a + href="X"> < /a>:</p>
+<ul>
+ <li> hi han links absoluts: < a href="https://www.urv.cat/ca/" target="_blank">Enllaç absolut< /a> <a href="https://www.urv.cat/ca/" target="_blank">Enllaç absolut</a></li>
+ <li> hi han links relatius: < a href="Ex1.html" target="_blank">Enllaç relatiu< /a> <a href="Ex1.html" target="_blank">Enllaç relatiu</a></li>
+ <li> Altres que es configuren amb un element id i et transporten a alguna part de la web: < a href="#top" target="_blank">Enllaç al element top < /a> <a href="#top" target="_blank">Enllaç al element top</a></li>
+ <li> Altres que es la combinació de web i id: < a href="Ex5.html#top" target="_blank">< /a> <a href="Ex5.html#top" target="_blank">enllaç al element top de EX5.html</a></li>
+</ul>
+<p> Les <b>imatges</b> s'escullen amb l'etiqueta < img + l'atribut src="X"> i es poden modificar amb els atributs de width o height </p>
+<ul>
+	<li>Hi han extretes de rutes absolutes:< img src="https://www.caracteristicas.co/wp-content/uploads/2017/03/sistema-solar-e1564771413564.jpg" width="200" height="150"><br><img src="https://www.caracteristicas.co/wp-content/uploads/2017/03/sistema-solar-e1564771413564.jpg" width="200" height="150"></li> 
+	<li>Hi han extretes de rutes relatives:< img src="../images/play.png" width="150px" height="100px"><br><img src="../images/play.png" width="150px" height="100px"></li>
+</ul>
+<p>Les <b>taules</b> s'afegeixen amb < table > on es conte una o més files amb < tr > i una o més columnes amb < td >, la primera fila dins el primer < tr > es defineix com a < th >: </p>
+<pre>
+< table >
+	< tr >
+		< th > llibreria < /th>
+		< th > versio < /th>
+	< /tr >
+	< tr >
+		< td > leaflet < /td >
+		< td > 1.2.1 < /td>
+< / table >
+
+<table >
+	<tr >
+		<th > llibreria </th>
+		<th > versio </th>
+	</tr >
+	<tr >
+		<td > leaflet </td >
+		<td > 1.2.1 </td>
+</table >
+</pre>
+<p> Hi ha ordres per <b>agrupar elements</b> com el < div > o el < span >:</p>
+<!-- es veura en l'esemple de CSS millor -->
+<ul>
+	<li> els < div > son elements en bloc que sempre van associats a una id o a una class per identificarlo i aplicar-li CSS o es poden crear containers buits per a aplicar JavaScript</li>
+	<li> els < span > son elements en linia equivalents als div </li>
+</ul>
+<p> Els <b> input elements </b> es posen amb < input > i serveixen per  afer la web més dinàmica amb interaccions: </p>
+<ul>
+	<li> han de tenir associats atributs com type (tipus d'input: number, range, text, radio, checkbox, button) , identifier (nom, el que s'enviara al servidor per recolectar info), initial o text (valors que tenen els camps)</li>
+<!-- Consultar exeple 6 del moodle -->
+	<li> si utilitzem el tag < text area > en ves de < input > ens permet escriure més text </li>
+	<li> les llistes desplegables són definides per < select > i < option ></li>
+</ul>
+<p> Existeixen <b>atributs</b> especifics que nomes poden anar amb algunes etiquetes com el href per < a > o el src per < img > pero hi han altres com el id (identificador unic), class (identificador no unic) i style (CSS incrustat) que poden anar en tots els tags inicials </p>
+</body>
+</html>
